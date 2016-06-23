@@ -53,6 +53,7 @@ class dedication_block_selection_form extends moodleform {
         for ($i = 1; $i <= 150; $i++) {
             $limitoptions[$i * 60] = $i;
         }
+
         $mform->addElement('select', 'limit', get_string('limit', 'block_dedication'), $limitoptions);
         $mform->addHelpButton('limit', 'limit', 'block_dedication');
 
